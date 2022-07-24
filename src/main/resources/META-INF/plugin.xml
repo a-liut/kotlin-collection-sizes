@@ -1,18 +1,14 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.aliut.kotlincollectionsizes</id>
-    <name>kotlin-collection-sizes</name>
+    <name>Kotlin Collection Sizes</name>
     <vendor>a-liut</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.kotlin</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.github.aliut.kotlincollectionsizes.services.MyApplicationService"/>
         <projectService serviceImplementation="com.github.aliut.kotlincollectionsizes.services.MyProjectService"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.aliut.kotlincollectionsizes.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
 </idea-plugin>

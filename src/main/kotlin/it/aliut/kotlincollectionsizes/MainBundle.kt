@@ -1,13 +1,13 @@
-package com.github.aliut.kotlincollectionsizes
+package it.aliut.kotlincollectionsizes
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls
 import org.jetbrains.annotations.PropertyKey
 
 @NonNls
-private const val BUNDLE = "messages.MyBundle"
+private const val BUNDLE = "messages.MainBundle"
 
-object MyBundle : DynamicBundle(BUNDLE) {
+object MainBundle : DynamicBundle(BUNDLE) {
 
     @Suppress("SpreadOperator")
     @JvmStatic
