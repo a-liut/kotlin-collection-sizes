@@ -8,7 +8,8 @@
     <depends>org.jetbrains.kotlin</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.aliut.kotlincollectionsizes.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.aliut.kotlincollectionsizes.services.MyProjectService"/>
+        <annotator
+                language="kotlin"
+                implementationClass="it.aliut.kotlincollectionsizes.annotators.ListSizeAnnotator"/>
     </extensions>
 </idea-plugin>
