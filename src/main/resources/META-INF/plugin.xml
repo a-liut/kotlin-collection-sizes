@@ -10,6 +10,6 @@
     <extensions defaultExtensionNs="com.intellij">
         <annotator
                 language="kotlin"
-                implementationClass="it.aliut.kotlincollectionsizes.annotators.ListSizeAnnotator"/>
+                implementationClass="it.aliut.kotlincollectionsizes.annotators.CollectionBuildersSizeAnnotator"/>
     </extensions>
 </idea-plugin>
