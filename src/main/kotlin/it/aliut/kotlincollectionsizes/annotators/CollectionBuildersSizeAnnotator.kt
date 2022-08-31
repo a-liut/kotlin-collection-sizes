@@ -5,6 +5,7 @@ import org.jetbrains.kotlin.psi.KtCallExpression
 
 class CollectionBuildersSizeAnnotator : SizeAnnotator() {
     private val validExpressions = setOf(
+        "arrayOf",
         "arrayListOf",
         "listOf",
         "listOfNotNull",
@@ -17,7 +18,14 @@ class CollectionBuildersSizeAnnotator : SizeAnnotator() {
         "hashMapOf",
         "linkedMapOf",
         "mapOf",
-        "mutableMapOf"
+        "mutableMapOf",
+        "sequenceOf",
+        "sequenceOfLazyValues",
+        "emptyList",
+        "emptySet",
+        "emptyArray",
+        "emptyMap",
+        "emptySequence"
     )
 
     override fun accept(element: PsiElement): Boolean =
