@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>com.github.aliut.kotlincollectionsizes</id>
     <name>Kotlin Collection Sizes</name>
-    <vendor>a-liut</vendor>
+    <vendor email="andrea.liut@gmail.com">a-liut</vendor>
 
     <depends>com.intellij.modules.platform</depends>
     <depends>org.jetbrains.kotlin</depends>
