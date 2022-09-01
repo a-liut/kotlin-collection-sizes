@@ -8,6 +8,8 @@
 Kotlin Collection Sizes is a plugin that tells you the size of any collection object declared in code.
 <!-- Plugin description end -->
 
+This plugin is mainly intended as a learning project to learn how the Intellij Platform works.
+
 ## Installation
 
 - Using IDE built-in plugin system:
