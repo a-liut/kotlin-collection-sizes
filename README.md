@@ -1,8 +1,8 @@
 # kotlin-collection-sizes
 
 ![Build](https://github.com/a-liut/kotlin-collection-sizes/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/19843-kotlin-collection-sizes.svg)](https://plugins.jetbrains.com/plugin/19843-kotlin-collection-sizes)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/19843-kotlin-collection-sizes.svg)](https://plugins.jetbrains.com/plugin/19843-kotlin-collection-sizes)
 
 <!-- Plugin description -->
 Kotlin Collection Sizes is a plugin that tells you the size of any collection object declared in code.
