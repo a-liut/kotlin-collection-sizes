@@ -1,8 +1,8 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.aliut.kotlincollectionsizes</id>
+    <id>it.aliut.kotlincollectionsizes</id>
     <name>Kotlin Collection Sizes</name>
-    <vendor email="andrea.liut@gmail.com">a-liut</vendor>
+    <vendor email="andrea.liut@gmail.com">Andrea Liut</vendor>
 
     <depends>com.intellij.modules.platform</depends>
     <depends>org.jetbrains.kotlin</depends>
