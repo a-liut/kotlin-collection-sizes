@@ -16,7 +16,7 @@ This plugin is mainly intended as a learning project to learn how the Intellij P
 
 - Using IDE built-in plugin system:
   
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "kotlin-collection-sizes"</kbd> >
+  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Kotlin Collection Sizes"</kbd> >
   <kbd>Install Plugin</kbd>
   
 - Manually:
