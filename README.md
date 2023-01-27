@@ -1,8 +1,8 @@
 # kotlin-collection-sizes
 
 ![Build](https://github.com/a-liut/kotlin-collection-sizes/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/19843-kotlin-collection-sizes.svg)](https://plugins.jetbrains.com/plugin/19843-kotlin-collection-sizes)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/19843-kotlin-collection-sizes.svg)](https://plugins.jetbrains.com/plugin/19843-kotlin-collection-sizes)
+[![Version](https://img.shields.io/jetbrains/plugin/v/19853-kotlin-collection-sizes.svg)](https://plugins.jetbrains.com/plugin/19853-kotlin-collection-sizes)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/19853-kotlin-collection-sizes.svg)](https://plugins.jetbrains.com/plugin/19853-kotlin-collection-sizes)
 
 <!-- Plugin description -->
 Kotlin Collection Sizes is a plugin that tells you the size of any collection object declared in code.
@@ -10,11 +10,13 @@ Kotlin Collection Sizes is a plugin that tells you the size of any collection ob
 
 This plugin is mainly intended as a learning project to learn how the Intellij Platform works.
 
+![alt text](./docs/pics/screen1.jpeg)
+
 ## Installation
 
 - Using IDE built-in plugin system:
   
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "kotlin-collection-sizes"</kbd> >
+  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Kotlin Collection Sizes"</kbd> >
   <kbd>Install Plugin</kbd>
   
 - Manually:
