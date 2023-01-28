@@ -5,7 +5,12 @@
 ## [Unreleased]
 
 ## [0.0.3]
-- updated dependencies versions.
+### Changed
+- Updated dependencies versions.
+
+## [0.0.2]
+### Changed
+- Upgraded plugin until-build version.
 
 ## [0.0.1]
 ### Added
