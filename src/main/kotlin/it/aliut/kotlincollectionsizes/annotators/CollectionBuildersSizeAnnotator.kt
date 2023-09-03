@@ -33,7 +33,12 @@ class CollectionBuildersSizeAnnotator : SizeAnnotator() {
             ?.let { isListOfExpression(it) }
             ?: false
 
-    override fun extractCount(element: PsiElement): Int? =
+    override fun extractData(element: PsiElement): AnnotationData =
+        AnnotationData(
+            itemsCount = extractSize(element)
+        )
+
+    private fun extractSize(element: PsiElement) =
         (element as? KtCallExpression)
             ?.valueArgumentList
             ?.arguments

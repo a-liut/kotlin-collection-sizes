@@ -7,20 +7,18 @@ import com.intellij.lang.annotation.HighlightSeverity
 import com.intellij.psi.PsiElement
 import it.aliut.kotlincollectionsizes.MainBundle
 
-abstract class SizeAnnotator: Annotator {
+abstract class SizeAnnotator : Annotator {
 
     abstract fun accept(element: PsiElement): Boolean
-    abstract fun extractCount(element: PsiElement): Int?
+    abstract fun extractData(element: PsiElement): AnnotationData
     abstract fun annotationRange(element: PsiElement): PsiElement
 
     override fun annotate(element: PsiElement, holder: AnnotationHolder) {
         element.takeIf { accept(it) }
             ?.let {
-                val itemsCount = extractCount(it)
+                val data = extractData(it)
 
-                val message = itemsCount
-                    ?.let { MainBundle.message("sizeMessage", itemsCount) }
-                    ?: MainBundle.message("sizeErrorMessage")
+                val message = createMessage(data)
 
                 val range = annotationRange(it)
 
@@ -31,4 +29,14 @@ abstract class SizeAnnotator: Annotator {
                     .create()
             }
     }
+
+    private fun createMessage(data: AnnotationData): String {
+        val sizeInfo = data.itemsCount ?: MainBundle.message("sizeDetectError")
+
+        return MainBundle.message("sizeMessage", sizeInfo)
+    }
+
+    data class AnnotationData(
+        val itemsCount: Int?
+    )
 }
