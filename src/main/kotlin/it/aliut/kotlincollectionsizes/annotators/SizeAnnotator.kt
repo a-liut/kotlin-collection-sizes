@@ -31,7 +31,7 @@ abstract class SizeAnnotator : Annotator {
     }
 
     private fun createMessage(data: AnnotationData): String {
-        val sizeInfo = data.itemsCount ?: "Cannot detect size"
+        val sizeInfo = data.itemsCount ?: MainBundle.message("sizeDetectError")
 
         return MainBundle.message("sizeMessage", sizeInfo)
     }
