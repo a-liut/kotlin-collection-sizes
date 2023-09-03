@@ -7,7 +7,7 @@ import com.intellij.lang.annotation.HighlightSeverity
 import com.intellij.psi.PsiElement
 import it.aliut.kotlincollectionsizes.MainBundle
 
-abstract class SizeAnnotator: Annotator {
+abstract class SizeAnnotator : Annotator {
 
     abstract fun accept(element: PsiElement): Boolean
     abstract fun extractData(element: PsiElement): AnnotationData
