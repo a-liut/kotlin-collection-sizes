@@ -8,6 +8,7 @@ import com.intellij.psi.PsiElement
 import it.aliut.kotlincollectionsizes.MainBundle
 
 abstract class SizeAnnotator : Annotator {
+
     abstract fun accept(element: PsiElement): Boolean
 
     abstract fun extractCount(element: PsiElement): Int?
@@ -20,7 +21,7 @@ abstract class SizeAnnotator : Annotator {
     ) {
         element.takeIf { accept(it) }
             ?.let {
-                val itemsCount = extractCount(it)
+                val data = extractData(it)
 
                 val message =
                     itemsCount
