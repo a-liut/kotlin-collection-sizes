@@ -8,12 +8,16 @@ import com.intellij.psi.PsiElement
 import it.aliut.kotlincollectionsizes.MainBundle
 
 abstract class SizeAnnotator : Annotator {
-
     abstract fun accept(element: PsiElement): Boolean
+
     abstract fun extractData(element: PsiElement): AnnotationData
+
     abstract fun annotationRange(element: PsiElement): PsiElement
 
-    override fun annotate(element: PsiElement, holder: AnnotationHolder) {
+    override fun annotate(
+        element: PsiElement,
+        holder: AnnotationHolder,
+    ) {
         element.takeIf { accept(it) }
             ?.let {
                 val data = extractData(it)
@@ -37,6 +41,6 @@ abstract class SizeAnnotator : Annotator {
     }
 
     data class AnnotationData(
-        val itemsCount: Int?
+        val itemsCount: Int?,
     )
 }
