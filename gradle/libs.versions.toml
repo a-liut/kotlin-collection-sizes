@@ -1,7 +1,6 @@
 [versions]
 # libraries
 junit = "4.13.2"
-annotations = "24.0.1"
 
 # plugins
 kotlin = "1.9.0"
@@ -12,7 +11,6 @@ kover = "0.7.2"
 ktlint = "11.5.1"
 
 [libraries]
-annotations = { group = "org.jetbrains", name = "annotations", version.ref = "annotations" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 
 [plugins]
